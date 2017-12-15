@@ -4,6 +4,7 @@ module.exports = (sequelize, DataTypes) => {
     name: {
       type: DataTypes.STRING,
       allowNull: false,
+      unique:true
     },
 
     image_url: {
@@ -25,6 +26,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.JSON,
       allowNull: false,
     },
+    
   }, {
     classMethods: {
       associate: function(models) {
